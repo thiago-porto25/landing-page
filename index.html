@@ -4,18 +4,26 @@
 
     <head>
 
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
 
-        <link href="Styles/styles.css" type="text/css" rel="style-sheet"/>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
         <title>Product`s Landing Page</title>
+
+        <script src="https://kit.fontawesome.com/59cf6b17a6.js" crossorigin="anonymous"></script>
 
     </head>
 
     <header id="header">
 
-        <img src="#" alt="The company`s logo">
+        <div id="div-logo">
 
+            <img id="logo" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Original Trombones logo">
+
+        </div>
+        
         <nav id="nav-bar">
 
             <a id="nav-features" class="nav-link" href="#">Features</a>
@@ -36,9 +44,11 @@
 
             <form id="get-started" action="https://www.freecodecamp.com/email-submit">
 
-                <input id="email" type="email" placeholder="Enter your Email adress">
+                <input id="email" type="email" placeholder="Enter your Email adress" required="">
 
-                <button id="btn" type="submit">Get Started</button>
+                <br>
+
+                <button class="btn" type="submit">Get Started</button>
 
             </form>
 
@@ -48,47 +58,59 @@
             
             <section id="section-features">
 
-                <div class="icon" id="fire-icon">
+                <div id="fire-container">
+                    
+                    <div class="icon" id="fire-icon">
 
-                    <img src="#" alt="A fire icon">
+                        <i class="fas fa-fire"></i>
 
-                </div>
+                    </div>
 
-                <div class="features-text-container">
+                    <div class="features-text-container">
 
-                    <h2 class="features-title">Premium Materials</h2>
+                        <h2 class="features-title">Premium Materials</h2>
 
-                    <p class="features-para">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                        <p class="features-para">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
 
-                </div>
-
-                <div class="icon" id="truck-icon">
-
-                    <img src="#" alt="A truck icon">
+                    </div>
 
                 </div>
 
-                <div class="features-text-container">
+                <div id="truck-container">
 
-                    <h2 class="features-title">Fast Shipping</h2>
+                    <div class="icon" id="truck-icon">
 
-                    <p class="features-para">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+                        <i class="fas fa-truck"></i>
 
-                </div>
+                    </div>
 
-                <div class="icon" id="battery-icon">
+                    <div class="features-text-container">
 
-                    <img src="#" alt="A battery icon">
+                        <h2 class="features-title">Fast Shipping</h2>
 
-                </div>
+                        <p class="features-para">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
 
-                <div class="features-text-container">
-
-                    <h2 class="features-title">Quality Assurance</h2>
-
-                    <p class="features-para">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+                    </div>
 
                 </div>
+
+                <div id="battery-container">
+
+                    <div class="icon" id="battery-icon">
+
+                        <i class="fas fa-battery-full"></i>
+
+                    </div>
+
+                    <div class="features-text-container">
+
+                        <h2 class="features-title">Quality Assurance</h2>
+
+                        <p class="features-para">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+
+                    </div>
+
+                </div>  
 
             </section>
 
